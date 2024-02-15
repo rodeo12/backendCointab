@@ -23,6 +23,10 @@ mongoose.connect(MONGO_URI)
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 
+app.get("/",(req,res)=>{
+  console.log("Welcome to the Cointab Backend") ;
+  })
+
 // Start the server
 
 app.listen(PORT, () =>{
