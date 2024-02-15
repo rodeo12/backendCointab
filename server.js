@@ -24,7 +24,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 
 app.get("/",(req,res)=>{
-  console.log("Welcome to the Cointab Backend") ;
+  res.status(200).json({ msg: 'Error Welcome to the Cointab Backend book' })
   })
 
 // Start the server
